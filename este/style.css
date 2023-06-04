@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form{
+    width: 10vw;
+    height: 10vh;
+    background-color: rgb(58, 83, 75);
+}
+.trans{
+  width: 10vw;
+  height: 10vh;
+  background-color: rgb(32, 241, 175);
+  animation: 1s infinite;
+  animation-name: teste;
+}
+  @keyframes teste {
+    from {top: 0px; background-color: yellow;}
+    to {top: 200px; background-color: blue;}
+  }  
+  @keyframes example {
+    from {top: 0px; background-color: yellow;}
+    to {top: 200px; background-color: blue;}
+  }

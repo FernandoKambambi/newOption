@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: #1f487e;
+  }
+  h1 {
+    color:#fafafa;
+    text-align: center;
+    margin: 1em 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .container {
+    position: relative;
+    padding: 15px;
+    max-width: 900px;
+    margin-top: 100px;
+    margin-left: 375px;
+    border-radius: 25px;
+  }
+  
+  .gallery-wrapper {
+    overflow-x: auto;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  
+  .arrow-right {
+    position: absolute;
+    top: 0;
+    left:78%;
+    right:0;
+    bottom: 0;
+    font-size: 100px;
+    line-height: 250px;
+    width:40px;
+    color: #ffffff;
+    transition: all 600ms ease-in-out;
+    background:none;
+    opacity: 0.1;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .arrow-left:hover,
+  .arrow-right:hover {
+    opacity: 1;
+  }
+  
+  .arrow-left {
+    right:0;
+    left: 250px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-size: 100px;
+    line-height: 250px;
+    width:40px;
+    color: #ffffff;
+    transition: all 600ms ease-in-out;
+    background:none;
+    opacity: 0.1;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+  }
+  
+  .item {
+    padding:5px;
+    border-radius: 20px;
+    width: 300px;
+    height: 500px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 40%;
+  }
+
+  .current-item {
+    transform: scale(1.03);
+    opacity: 100%;
+  }
+    .gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .gallery-wrapper {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+#fundo{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+p{
+  position: absolute;
+  color: #ffffff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left:34% ;
+  font-size: 60px;
+}
+h1{
+  position: absolute;
+  color: rgb(150, 161, 179);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: left;
+  margin-left:1% ;
+  margin-top: 650px;
+  font-size: 15px;
+}
+h2{
+  position: absolute;
+  color:#7e1f34;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 300px;
+  margin-left:10px ;
+  font-size: 60px;
+}
